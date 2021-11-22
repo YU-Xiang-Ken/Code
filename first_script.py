@@ -30,23 +30,11 @@ print("Output #12: {0:.2f}".format(log(4)))
 print("Output #13: {0:.1f}".format(sqrt(81)))
 
 
+print("Output #14: {0:s}".format('I\'m enjoying learning Python.'))
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Output #15: {0:s}".format("This is a long string.  Without the backslash \
+it would run off of the page on the right in the text editor and be very \
+difficult to read and edit.  By using the backslash you can split the long \
+string into smaller strings on separate lines so that the whole string is easy \
+to view in the text editor."))
