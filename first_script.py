@@ -78,10 +78,9 @@ string3_strip = string3.strip()
 print("Output #29: strip: {0:s}".format(string3_strip))
 
 
-
+#制表符示例
 print("学号\t姓名\t语文\t数学\t英语")
 print("2017001\t曹操\t99\t\t88\t\t0")
 print("2017002\t周瑜\t92\t\t45\t\t93")
 print("2017008\t黄盖\t77\t\t82\t\t100")
-
 
