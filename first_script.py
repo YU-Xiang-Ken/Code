@@ -38,3 +38,23 @@ it would run off of the page on the right in the text editor and be very \
 difficult to read and edit.  By using the backslash you can split the long \
 string into smaller strings on separate lines so that the whole string is easy \
 to view in the text editor."))
+
+
+print("Output #16: {0:s}".format('''You can use triple single quotes 
+for full multi-line comment strings.'''))
+print("Output #17: {0:s}".format("""You can use triple double quotes
+for multi-line comment strings."""))
+
+
+string1 = "This is a "
+string2 = "short string."
+sentence = string1 + string2
+print("Output #18: {0:s}".format(sentence))
+print("Output #19: {0:s} {1:s}{2:s}".format("She is", "very "*4, "beautiful."))
+m = len(sentence)
+print("Output #20: {0:d}".format(m))
+
+
+
+
+
