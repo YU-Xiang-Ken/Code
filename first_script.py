@@ -84,3 +84,24 @@ print("2017001\t曹操\t99\t\t88\t\t0")
 print("2017002\t周瑜\t92\t\t45\t\t93")
 print("2017008\t黄盖\t77\t\t82\t\t100")
 
+
+
+
+
+
+
+string4 = "$$Here's another string that has unwanted vharacters.__---++"
+print("Output #30: {0:s}".format(string4))
+string4 = "$$The unwanted characters have been moved.__---++"
+string4_strip = string4.strip('$_-+')
+print("Output #31: {0:s}".format(string4_strip))
+
+string5 = "Let's replace the spaces in this sentence with other characters."
+string5_replace = string5.replace(" ","!@!")
+print("Output #32(with !@!): {0:s}".format(string5_replace))
+string5_replace = string5.replace(" ",",")
+print("Output #32(with commas): {0:s}".format(string5_replace))
+
+
+
+
