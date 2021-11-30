@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from math import exp, log, sqrt
-
+import re
 
 print("Output #1: I'm excited to learn Python.")
 x = 4
@@ -113,5 +113,12 @@ print("Output #37(on each word):")
 for word in string5_list:
     print("{0:s}".format(word.capitalize()))
 
-
+string = "The quick brown fox jumps over the lazy dog."
+string_list = string.split()
+pattern = re.compile(r"The", re.I)
+count = 0
+for word in string_list:
+    if pattern.search(word):
+    	count += 1
+print("Output #38: {0:d}".format(count))
 
