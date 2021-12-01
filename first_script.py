@@ -145,4 +145,20 @@ print("Output #44: {0!s}".format(today.day))
 current_daytime = datetime.today()
 print("Output #45: {0!s}".format(current_daytime))
 
+#Output #41: today: 2021-12-01; Output #42: 2021; Output #43: 12; Output #44: 1;Output #45: 2021-12-01 21:03:21.738656
+
+one_day = timedelta(days=-1)
+yesterday = today + one_day
+print("Output #46: yesterday: {0!s}".format(yesterday))
+eight_hours = timedelta(hours=-8)
+print("Output #47: {0!s} {1!s}".format(eight_hours.days, eight_hours.seconds))
+#Output #45: 2021-12-01 21:07:19.128404; Output #46: yesterday: 2021-11-30; Output #47: -1 57600
+
+
+
+
+
+
+
+
 
