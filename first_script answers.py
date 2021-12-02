@@ -214,13 +214,17 @@ print("Output #76: {}".format(another_list[1:]))
 a_new_list = a_list[:]
 print("Output #77: {}".format(a_new_list))
 
+a_longer_list = a_list + another_list
+print("Output #78: {}".format(a_longer_list))
 
-
-
-
-
-
-
+a = 2 in a_list
+print("Output #79:{}".format(a))
+if 2 in a_list:
+  print("Output #80: 2 is in {}.".format(a_list))
+b = 6 not in a_list
+print("Output #81: {}".format(b))
+if 6 not in a_list:
+  print("Output #82: 6 is not in {}.".format(a_list))
 
 
 
