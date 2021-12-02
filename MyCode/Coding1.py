@@ -165,11 +165,19 @@ print("Output #53: {:s}".format(today.strftime('%B %d, %Y')))
 #Output #50: 12/02/2021; Output #51: Dec 02 2021; Output #52: 2021-12-02; Output #53: December 02, 2021
 
 
+date1 = today.strftime('%m/%d/%Y')
+date2 = today.strftime('%b %d, %Y')
+date3 = today.strftime('%Y-%m-%d')
+date4 = today.strftime('%B %d, %Y')
 
+print("Output #54: {!s}".format(datetime.strptime(date1, '%m/%d/%Y')))
+print("Output #55: {!s}".format(datetime.strptime(date2, '%b %d, %Y')))
 
-
-
-
+print("Output #56: {!s}".format(datetime.date(datetime.strptime\
+(date3, '%Y-%m-%d'))))
+print("Output #57: {!s}".format(datetime.date(datetime.strptime\
+(date4, '%B %d, %Y'))))
+#注意换行 Output #54: 2021-12-02 00:00:00; Output #55: 2021-12-02 00:00:00; Output #56: 2021-12-02; Output #57: 2021-12-02
 
 
 
