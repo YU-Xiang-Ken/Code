@@ -154,6 +154,87 @@ eight_hours = timedelta(hours=-8)
 print("Output #47: {0!s} {1!s}".format(eight_hours.days, eight_hours.seconds))
 #Output #45: 2021-12-01 21:07:19.128404; Output #46: yesterday: 2021-11-30; Output #47: -1 57600
 
+date_diff = today - yesterday
+print("Output #48: {0!s}".format(date_diff))
+print("Output #49: {0!s}".format(str(date_diff).split()[0]))
+
+print("Output #50: {:s}".format(today.strftime('%m/%d/%Y')))
+print("Output #51: {:s}".format(today.strftime('%b %d %Y')))
+print("Output #52: {:s}".format(today.strftime('%Y-%m-%d')))
+print("Output #53: {:s}".format(today.strftime('%B %d, %Y')))
+#Output #50: 12/02/2021; Output #51: Dec 02 2021; Output #52: 2021-12-02; Output #53: December 02, 2021
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
