@@ -237,15 +237,17 @@ a_list.pop()
 a_list.pop()
 print("Output #85: {}".format(a_list))
 
+a_list.reverse()
+print("Output #86: {}".format(a_list))
+a_list.reverse()
+print("Output #87: {}".format(a_list))
 
-
-
-
-
-
-
-
-
+unordered_list = [3, 5, 1, 7, 2, 8, 4, 9, 0, 6]
+print("Output #88: {}".format(unordered_list))
+list_copy = unordered_list[:]
+list_copy.sort()
+print("Output #89: {}".format(list_copy))
+print("Output #90: {}".format(unordered_list))
 
 
 
