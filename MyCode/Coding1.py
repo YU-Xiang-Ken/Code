@@ -227,12 +227,15 @@ if 6 not in a_list:
   print("Output #82: 6 is not in {}.".format(a_list))
 
 
-
-
-
-
-
-
+a_list.append(4)
+a_list.append(5)
+a_list.append(6)
+print("Output #83: {}".format(a_list))
+a_list.remove(5)
+print("Output #84: {}".format(a_list))
+a_list.pop()
+a_list.pop()
+print("Output #85: {}".format(a_list))
 
 
 
