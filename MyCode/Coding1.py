@@ -2,7 +2,7 @@
 from math import exp, log, sqrt
 import re
 from datetime import date, time, datetime, timedelta
-
+from operator import itemgetter
 
 print("Output #1: I'm excited to learn Python.")
 x = 4
@@ -249,13 +249,15 @@ list_copy.sort()
 print("Output #89: {}".format(list_copy))
 print("Output #90: {}".format(unordered_list))
 
+my_lists = [[1,2,3,4],[4,3,2,1],[2,4,1,3]]
+my_lists_sorted_by_index_3 = sorted(my_lists, key=lambda index_value:\
+index_value[3])
+print("Output #91: {}".format(my_lists_sorted_by_index_3))
 
-
-
-
-
-
-
+my_lists = [[123,2,2,444],[22,6,6,444],[354,4,4,678],[236,5,5,678], \
+[578,1,1,290],[461,1,1,290]]
+my_lists_sorted_by_index_3_and_0 = sorted(my_lists, key=itemgetter(3,0))
+print("Output #92: {}".format(my_lists_sorted_by_index_3_and_0))
 
 
 
