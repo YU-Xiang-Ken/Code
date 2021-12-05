@@ -197,17 +197,34 @@ print("Output #63: another_list also has {} elements.".format\
 print("Output #64: 5 is in another_list {} time.".format(another_list.count(5)))
 
 
+print("Output #65: {}".format(a_list[0]))
+print("Output #66: {}".format(a_list[1]))
+print("Output #67: {}".format(a_list[2]))
+print("Output #68: {}".format(a_list[-1]))
+print("Output #69: {}".format(a_list[-2]))
+print("Output #70: {}".format(a_list[-3]))
+print("Output #71: {}".format(another_list[2]))
+print("Output #72: {}".format(another_list[-1]))
 
+print("Output #73: {}".format(a_list[0:2]))
+print("Output #74: {}".format(another_list[:2]))
+print("Output #75: {}".format(a_list[1:3]))
+print("Output #76: {}".format(another_list[1:]))
 
+a_new_list = a_list[:]
+print("Output #77: {}".format(a_new_list))
 
+a_longer_list = a_list + another_list
+print("Output #78: {}".format(a_longer_list))
 
-
-
-
-
-
-
-
+a = 2 in a_list
+print("Output #79:{}".format(a))
+if 2 in a_list:
+  print("Output #80: 2 is in {}.".format(a_list))
+b = 6 not in a_list
+print("Output #81: {}".format(b))
+if 6 not in a_list:
+  print("Output #82: 6 is not in {}.".format(a_list))
 
 
 
