@@ -260,14 +260,20 @@ my_lists_sorted_by_index_3_and_0 = sorted(my_lists, key=itemgetter(3,0))
 print("Output #92: {}".format(my_lists_sorted_by_index_3_and_0))
 
 
+my_tuple = ('x','y','z')
+print("Output #93: {}".format(my_tuple))
+print("Output #94: my_tuple has {} elements.".format(len(my_tuple)))
+print("Output #95: {}".format(my_tuple[1]))
+longer_tuple = my_tuple + my_tuple
+print("Output #96: {}".format(longer_tuple))
 
-
-
-
-
-
-
-
+one, two, three = my_tuple
+print("Output #97: {0} {1} {2}".format(one, two, three))
+var1 = 'red'
+var2 = 'robin'
+print("Output #98: {} {}".format(var1, var2))
+var1, var2 = var2, var1
+print("Output #99: {} {}".format(var1, var2))
 
 
 
