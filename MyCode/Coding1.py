@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+\#!/usr/bin/env python3
 from math import exp, log, sqrt
 import re
 from datetime import date, time, datetime, timedelta
@@ -276,9 +276,10 @@ var1, var2 = var2, var1
 print("Output #99: {} {}".format(var1, var2))
 
 
-
-
-
+my_list = [1, 2, 3]
+my_tuple = ('x','y','z')
+print("Output #100: {}".format(tuple(my_list)))
+print("Output #101: {}".format(list(my_tuple)))
 
 
 
