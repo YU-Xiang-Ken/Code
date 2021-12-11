@@ -324,12 +324,18 @@ ordered_dict4 = sorted(dict_copy.items(), key=lambda x: x[1], reverse=False)
 print("Output #123: (order by values, ascending): {}".format(ordered_dict4))
 
 
+x=5
+if x > 4 or x != 9:
+  print("Output #124: {}".format(x))
+else:
+  print("Output #124: x is not greater than 4")
 
-#120 ？？？？？
-
-
-
-
+if x > 6:
+  print("Output #125: x is graeater than six")
+elif x > 4 and x ==5:
+  print("Output #125: {}".format(x*x))
+else:
+  print("Output #125: x is not greater than 4")
 
 
 
