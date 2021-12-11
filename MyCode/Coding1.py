@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+
 from math import exp, log, sqrt
 import re
 from datetime import date, time, datetime, timedelta
 from operator import itemgetter
+
 
 print("Output #1: I'm excited to learn Python.")
 x = 4
@@ -336,6 +338,83 @@ elif x > 4 and x ==5:
   print("Output #125: {}".format(x*x))
 else:
   print("Output #125: x is not greater than 4")
+
+
+y = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', \
+'Nov', 'Dec']
+z = ['Annie', 'Betty', 'Claire', 'Daphne', 'Ellie', 'Franchesca', 'Greta', \
+'Holly', 'Isabel', 'Jenny']
+
+print("Output #129:")
+for month in y:
+    print("{!s}".format(month))
+
+print("Output #130: (index value: name in list)")
+for i in range(len(z)):
+    print("{0!s}: {1:s}".format(i, z[i]))
+
+print("Output #131: (access elements in y with z's index values)")
+for j in range(len(z)):
+    if y[j].startswith('J'):
+        print("{!s}".format(y[j]))
+
+print("Output #132:")
+for key, value in another_dict.items():
+    print("{0:s}, {1}".format(key, value))
+
+
+my_data = [[1,2,3], [4,5,6], [7,8,9]]
+rows_to_keep = [row for row in my_data if row[2] > 5]
+print("Output #130 (list comprehension): {}".format(rows_to_keep))
+
+my_data = [(1,2,3),(4,5,6),(7,8,9),(7,8,9)]
+set_of_tuples1 = {x for x in my_data}
+print("OUtput #131: (set comprehension): {}".format(set_of_tuples1))
+set_of_tuples2 = set(my_data)
+print("Output #132 (set function): {}".format(set_of_tuples2))
+
+
+my_dictionary = {'customer1': 7, 'customer2': 9, 'customer3': 11}
+my_results ={key : value for key, value in my_dictionary.items() if\
+  value >10}
+print("Output #133 (dictionary comprehension): {}".format(my_results))
+
+print("Output #134:")
+x = 0
+while x < 11:
+  print("{!s}".format(x))
+  x += 1
+
+
+# def getMean(numericValues):
+#   return sum(numericValues)/len(numericValues) if len(numericValues) > 0\
+#     else float('nan')
+
+# my_list= [2, 2, 4, 4, 6, 6, 8, 8]
+# q=getMean(my_list)
+
+# print("Output #135 (mean): {!s}".format(q))
+
+def getMean(numericValues):
+  return sum(numericValues)/len(numericValues) if len(numericValues) > 0\
+    else float('nan')
+
+my_list= [2, 2, 4, 4, 6, 6, 8, 8]
+print("Output #135 (mean): {!s}".format(getMean(my_list)))
+
+import numpy as np
+print (np.mean(my_list))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
