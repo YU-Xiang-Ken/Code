@@ -406,17 +406,24 @@ import numpy as np
 print (np.mean(my_list))
 
 
+def getMean(numericValues):
+  return sum (numericValues)/len(numericValues)
+my_list2 = [ ]
+try:
+  print("Output #138: {}".format(getMean(my_list2)))
+except ZeroDivisionError as detail:
+  print("Output #138 (Error): {}".format(float('nan')))
+  print("Output #138 (Error): {}".format(detail))
 
-
-
-
-
-
-
-
-
-
-
+try:
+  result = getMean(my_list2)
+except ZeroDivisionError as detail:
+  print("Output #142 (Error): {}" .format(float('nan')))
+  print("Output #142 (Error): {}" .format(detail))
+else:
+  print("Output #142 (The mean is ): {}" .format(result))
+finally:
+  print("Output #142 (Finally): The finally block is excuted every time")
 
 
 
