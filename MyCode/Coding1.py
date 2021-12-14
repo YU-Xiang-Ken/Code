@@ -4,7 +4,9 @@ from math import exp, log, sqrt
 import re
 from datetime import date, time, datetime, timedelta
 from operator import itemgetter
-
+import sys
+import glob
+import os
 
 print("Output #1: I'm excited to learn Python.")
 x = 4
@@ -424,6 +426,21 @@ else:
   print("Output #142 (The mean is ): {}" .format(result))
 finally:
   print("Output #142 (Finally): The finally block is excuted every time")
+
+# imput_file = sys.argv[1]
+
+# print("Output #143:")
+# filereader = open(input_file, 'r')
+# for row in filereader:
+#   print(row.strip())
+# filereader.close()
+
+# input_file = sys.argv[1]
+# print("Output #144:")
+# with open(input_file, 'r', newline='') as filereader:
+#   for row in filereader:
+#     print("{}".format(row.strip()))
+
 
 
 
