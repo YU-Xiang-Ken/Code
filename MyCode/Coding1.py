@@ -427,7 +427,7 @@ else:
 finally:
   print("Output #142 (Finally): The finally block is excuted every time")
 
-# imput_file = sys.argv[1]
+# input_file = sys.argv[1]
 
 # print("Output #143:")
 # filereader = open(input_file, 'r')
@@ -441,9 +441,12 @@ finally:
 #   for row in filereader:
 #     print("{}".format(row.strip()))
 
-
-
-
+print("Output #145:")
+inputPath = sys.argv[1]
+for input_file in glob.glob(os.path.join(inputPath,'*.txt')):
+  with open(input_file, 'r', newline='') as filereader:
+    for row in filereader:
+      print("{}".format(row.strip()))
 
 
 
